@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>
+            Lab 01:Introduccion
+        </title>
+    </head>
+    <body>
+        <div style="background-color: rgb(172, 248, 242);">
+        <h1 style="text-align: center;border: 5px;border-style: groove;border-color:blueviolet">Lab 01<br>
+            Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información
+        </h1>
+            <h4 style="text-align: right; border:5px;border-style: groove;border-color: blueviolet;">Jorge Guerrero Díaz <br>
+                A01411752 <br>
+                jorge.guerrero.0023@gmail.com <br>
+                <a href="https://open.spotify.com/user/karimebell?si=bbe197d2bfd2415b"> Spotify <br>
+                </a><a href="https://github.com/AdrenalChip"> Github </a>
+            </h4>
+            <hr/>
+        </div>
+        <article>
+        <aside style="width:30%;padding-left:15px;margin-left:1000px;">
+            <h2 style="border: 5px;border-style: double;border-color: blueviolet;background-color: aliceblue;text-align: center;width:fit-content;"> Mis gustos:</h2>
+            <ul style="border: 5px;border-style: double;border-color: blueviolet;background-color: aliceblue;width: 350px;"> 
+                <li>Peliculas Favoritas:</li> 
+                <ul>                                                        
+                    <li>Forrest Gump</li>
+                    <li>Last Night in Soho</li>
+                    <li>Jojo Rabbit</li>
+                    <li>The Nightmare Before Christmas</li>
+                    <li>El Niño y la Bestia</li>
+                </ul>
+                <li>Videojuegos favoritos:</li>
+                    <ul>
+                        <li>Assasins Creed Brotherhood</li>
+                        <li>Pokemon Fire Red</li>
+                        <li>Smite</li>
+                       </ul>
+                <li>Libros Favoritos:</li>
+                    <ul>
+                        <li>Alex Quiere un Dinosaurio</li>
+                        <li>El Niño en la Cima de la Montaña  </li>
+                        <li>Mistborn</li>
+                        <li>El Salvaje</li>
+                        <li>Las Ventajas de Ser Invisible</li>
+                    </ul>
+            </ul>
+        </aside>
+        </article>
+        <div style="background-color: rgb(160, 206, 160);border: 5px;border-style: double;border-color: aliceblue;width: 800px;">
+            <h2>Preguntas:</h2>
+         <h3>¿Cuál es la diferencia entre Internet y la World Wide Web? </h3>
+         <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;"> Internet es la red de computadoras alrededor del mundo y la WWW es la coleccion de paginas que se situa en dicha red de computadoras <br>
+        </p>
+        <h3>¿Cuáles son las partes de un URL?</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            http://www.pocoyo.com/cosas/cosas.html#bottom <br>
+            Protocolo:://subdominio.dominio.TLD (extension o terminacion)/directorio/pagina/etiqueta <br>
+
+            <img src="https://edytapukocz.com/wp-content/uploads/2019/11/partes-url-ejemplos.png" width="500" height="170">
+        </p>
+        <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+                <dl style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+                    <dt>GET</dt>
+                    <dd>Leer datos</dd>
+                    
+                    <dt>HEAD</dt>
+                    <dd>Recuperar datos similar al GET, sirve principalmente para ver si existe el dato o recurso</dd>
+
+                    <dt>POST</dt>
+                    <dd>Crear datos</dd>
+                    
+                    <dt>PUT</dt>
+                    <dd>Actualizar datos ya creados</dd>
+
+                    <dt>PATCH</dt>
+                    <dd>Modificaciones parciales a un recurso</dd>
+
+                    <dt>DELETE</dt>
+                    <dd>Eliminar</dd>
+                </dl>
+        <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            POST pues se ingresa por primera vez informacion nueva al servidor y se tiene que registrar por primera vez en la base de datos y va cifrado <br>
+        </p>
+        <h3>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+                El metodo GET, recupera la informacion de un lado y redirije o muestra al usuario <br>
+        </p>
+        <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        Indica que la solicitud ha tenido exito, es almacenable <br>
+        </p>
+        <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        Un error 404 indica que el host ha sido capaz de comunicarse con el servidor, pero no existe el recurso que ha sido pedido, es trabajo del desarrollador asegurarse que haya algo o por defecto que eliminar lo que redirriga a eso inexistente. <br>
+        </p>
+        <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            Error al intentar acceder al servidor. Es responsabilidad del desarrollador asignar bien las direcciones al servidor y que todo este montado y que considera que soportara x cantidad de solicitudes,fuera de eso ya no es su culpa si el servidor se apaga, o sufre de alguna caida por el flujo de usuarios. <br>
+        </p>
+        <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            Que su uso no son recomendados pues no todos los navegadores actuales cuentan con el soporte para interpretar los atributos.Ya no se le da el mantenimiento a estos atributos. frame, frameset,noframe. <br>
+        </p>
+        <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5? </h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            Mejor soporte multimedia en el HTML 5, sin neceisdad de javascript o flash. Han mejorado el uso de la semantica en las etiquetas,mejor soporte movil <br>
+            Mejor estructura de la pagina, estilo de cascada, html, y un poco de javascript 
+        </p>
+        <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            SUMMARY <br>
+            WIDTH<br>
+            FRAME<br>
+            RULES <br>
+            BORDER <br>
+            CELLSPACING<br> 
+            CELLPADING <br>
+            ALIGN<br>
+        </p>
+        <h3>¿Cuáles son los principales controles de una forma HTML5? </h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            Input, text field, checkbox, submit, reset, button
+        </p>
+        <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h3>
+        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+            Firefox 97.0 on Windows 10 <br>
+            Un puntaje de 464 puntos de un total de 555 <br> 
+        </p>
+        <h3>
+            Sobre el ciclo de vida y desarrollo de los sistemas de información: <br>
+            ¿Cuál es el ciclo de vida de los sistemas de información? <br>
+            ¿Cuál es el ciclo de desarrollo de sistemas de información? <br>
+        </h3>
+        <p >  
+            <dl style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;" > 
+                El ciclo de vida de un sistema de información es un enfoque por fases del análisis y diseño que sostiene que los sistemas son desarrollados de mejor manera mediante el uso de un ciclo especifico de actividades del analista y del usuario <br>
+                Fases: <br>
+            <dt>Nacimiento</dt>
+                <dd>Surge de una necesidad o requerimiento por parte del usuario, ver si justifica el desarrollo del sistema, estudio de factibilidad</dd>    
+            <dt>Desarrollo</dt>
+                <dd>Analizan requerimientos y se elabora un diseño, se elaboran los programas necesarios para que el sistema pueda operar. <br>
+                Diseñar, construir, y/o adecuar los programas que se requieren</dd>
+            <dt>Operacion</dt>
+                <dd>El sistema ya esta terminado, el usuario trabaja en el mismo, si el sistema no satisface los requerimientos o hay algun error es necesario pasar a la fase de mantenimiento</dd>   
+            <dt>Mantenimiento</dt>
+                <dd>Corregir los errores que se detectan en el programa o en las funciones. En esta fase el usuario puede agregar nuevos requerimientos</dd>
+            <dt>Muerte</dt>
+                <dd>Llega aqui cuando deja de ser necesario o cuando debe de reemplazarse por otro mejor. Si el sistema original ya ha sido modificado el proceso se inicia nuevamente, pues el programa anterior ya murio y ahora seria uno nuevo.</dd>
+            </dl>
+
+            <dl style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;" > 
+                Fases de desarrollo de sistemas de informacion: <br>
+            <dt>Planeacion</dt>
+                <dd>Requerimiento completo teniendo en cuenta el flujo de informacion con que se trabaja, documentar mediante diagramas de flujo, usarios,necesidades </dd>    
+            <dt>Analisis</dt>
+                <dd>Asesorar,supervisar,recomendar,y modificar procesos internos </dd>
+            <dt>Implantacion</dt>
+                <dd>Construccion del nuevo sistema y el paso del sistema a produccion <br>
+                Fases: <br>
+                -Probar redes y base de datos<br>
+                -Construccion y prueba de las aplicaciones <br>
+                -Instalacion y prueba del nuevo sistema <br>
+                -Entrega del sistema para puesta en funcionamiento <br>
+                </dd>   
+            <dt>Pruebas</dt>
+                <dd>Resultados del sistema. Precision, Calidad y los productos esperados. Es un proceso ciclico </dd>
+        </p>
+        </div>
+        <div>
+        <h2>Editor de HTML utilizado: <strong>Visual Studio Code</strong></h2>
+        <footer>
+            From: Microsoft<br>
+            <a href="https://code.visualstudio.com/">Visual Studio Code</a><br>
+
+            From: Brenda Barron <br>
+            <a href="https://kinsta.com/es/blog/html-vs-html5/#html-vs-html5-sopesando-las-diferencias">HTML vs HTML5: Conoce las diferencias cruciales entre ellos</a> <br>
+
+            From: MDN Web Docs <br>
+            <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods">Métodos de petición HTTP</a><br>
+            <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls">Controles de formulario originales</a><br>
+            From: David Noguera <br>
+            <a href="https://www.webempresa.com/blog/que-es-un-error-500-y-como-localizarlo-en-nuestra-web.html">HTTP Error 500 – Internal Server Error, Qué es y Cómo Solucionar</a> <br>
+
+            From: HTMLquick<br>
+            <a href="https://www.htmlquick.com/es/reference/tags/table.html#specific-attributes">Atributos HTML5</a>
+          </footer> 
+          
+        </div>
+    </body>
+</html>
