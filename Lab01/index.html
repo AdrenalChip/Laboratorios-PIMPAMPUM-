@@ -3,26 +3,25 @@
         <title>
             Lab 01:Introduccion
         </title>
+        <link rel="stylesheet" href="myself.css">
     </head>
     <body>
-        <div style="background-color: rgb(172, 248, 242);">
-        <h1 style="text-align: center;border: 5px;border-style: groove;border-color:blueviolet">Lab 01<br>
+        <div class="headshoulders">
+        <h1>Lab 01<br>
             Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información
         </h1>
-            <h4 style="text-align: right; border:5px;border-style: groove;border-color: blueviolet;">Jorge Guerrero Díaz <br>
+            <h4>Jorge Guerrero Díaz <br>
                 A01411752 <br>
                 jorge.guerrero.0023@gmail.com <br>
-                <a href="https://open.spotify.com/user/karimebell?si=bbe197d2bfd2415b"> Spotify <br>
-                </a><a href="https://github.com/AdrenalChip"> Github </a>
+                <a href="https://open.spotify.com/user/karimebell?si=bbe197d2bfd2415b" class="link"> Spotify <br>
+                </a><a href="https://github.com/AdrenalChip" class="link"> Github </a>
             </h4>
             <hr/>
         </div>
-        <article>
-        <aside style="width:30%;padding-left:15px;margin-left:1000px;">
-            <h2 style="border: 5px;border-style: double;border-color: blueviolet;background-color: aliceblue;text-align: center;width:fit-content;"> Mis gustos:</h2>
-            <ul style="border: 5px;border-style: double;border-color: blueviolet;background-color: aliceblue;width: 350px;"> 
-                <li>Peliculas Favoritas:</li> 
-                <ul>                                                        
+            <ul class="ulclases"> 
+                <h2> Mis gustos:</h2>
+                <li >Peliculas Favoritas:</li> 
+                <ul class="respuestas">                                                        
                     <li>Forrest Gump</li>
                     <li>Last Night in Soho</li>
                     <li>Jojo Rabbit</li>
@@ -30,13 +29,13 @@
                     <li>El Niño y la Bestia</li>
                 </ul>
                 <li>Videojuegos favoritos:</li>
-                    <ul>
+                    <ul class="respuestas">
                         <li>Assasins Creed Brotherhood</li>
                         <li>Pokemon Fire Red</li>
                         <li>Smite</li>
                        </ul>
                 <li>Libros Favoritos:</li>
-                    <ul>
+                    <ul class="respuestas">
                         <li>Alex Quiere un Dinosaurio</li>
                         <li>El Niño en la Cima de la Montaña  </li>
                         <li>Mistborn</li>
@@ -44,15 +43,13 @@
                         <li>Las Ventajas de Ser Invisible</li>
                     </ul>
             </ul>
-        </aside>
-        </article>
-        <div style="background-color: rgb(160, 206, 160);border: 5px;border-style: double;border-color: aliceblue;width: 800px;">
-            <h2>Preguntas:</h2>
+        <div class="preguntas">
+            <h3 style="font-size: larger;">Preguntas:</h3>
          <h3>¿Cuál es la diferencia entre Internet y la World Wide Web? </h3>
-         <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;"> Internet es la red de computadoras alrededor del mundo y la WWW es la coleccion de paginas que se situa en dicha red de computadoras <br>
+         <p class="respuestas"> Internet es la red de computadoras alrededor del mundo y la WWW es la coleccion de paginas que se situa en dicha red de computadoras <br>
         </p>
         <h3>¿Cuáles son las partes de un URL?</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             http://www.pocoyo.com/cosas/cosas.html#bottom <br>
             Protocolo:://subdominio.dominio.TLD (extension o terminacion)/directorio/pagina/etiqueta <br>
 
@@ -79,36 +76,36 @@
                     <dd>Eliminar</dd>
                 </dl>
         <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             POST pues se ingresa por primera vez informacion nueva al servidor y se tiene que registrar por primera vez en la base de datos y va cifrado <br>
         </p>
         <h3>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
                 El metodo GET, recupera la informacion de un lado y redirije o muestra al usuario <br>
         </p>
         <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
         Indica que la solicitud ha tenido exito, es almacenable <br>
         </p>
         <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
         Un error 404 indica que el host ha sido capaz de comunicarse con el servidor, pero no existe el recurso que ha sido pedido, es trabajo del desarrollador asegurarse que haya algo o por defecto que eliminar lo que redirriga a eso inexistente. <br>
         </p>
         <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             Error al intentar acceder al servidor. Es responsabilidad del desarrollador asignar bien las direcciones al servidor y que todo este montado y que considera que soportara x cantidad de solicitudes,fuera de eso ya no es su culpa si el servidor se apaga, o sufre de alguna caida por el flujo de usuarios. <br>
         </p>
         <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             Que su uso no son recomendados pues no todos los navegadores actuales cuentan con el soporte para interpretar los atributos.Ya no se le da el mantenimiento a estos atributos. frame, frameset,noframe. <br>
         </p>
         <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5? </h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             Mejor soporte multimedia en el HTML 5, sin neceisdad de javascript o flash. Han mejorado el uso de la semantica en las etiquetas,mejor soporte movil <br>
             Mejor estructura de la pagina, estilo de cascada, html, y un poco de javascript 
         </p>
         <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             SUMMARY <br>
             WIDTH<br>
             FRAME<br>
@@ -119,11 +116,11 @@
             ALIGN<br>
         </p>
         <h3>¿Cuáles son los principales controles de una forma HTML5? </h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             Input, text field, checkbox, submit, reset, button
         </p>
         <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h3>
-        <p style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;">
+        <p class="respuestas">
             Firefox 97.0 on Windows 10 <br>
             Un puntaje de 464 puntos de un total de 555 <br> 
         </p>
@@ -133,7 +130,7 @@
             ¿Cuál es el ciclo de desarrollo de sistemas de información? <br>
         </h3>
         <p >  
-            <dl style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;" > 
+            <dl class="respuestas" > 
                 El ciclo de vida de un sistema de información es un enfoque por fases del análisis y diseño que sostiene que los sistemas son desarrollados de mejor manera mediante el uso de un ciclo especifico de actividades del analista y del usuario <br>
                 Fases: <br>
             <dt>Nacimiento</dt>
@@ -149,7 +146,7 @@
                 <dd>Llega aqui cuando deja de ser necesario o cuando debe de reemplazarse por otro mejor. Si el sistema original ya ha sido modificado el proceso se inicia nuevamente, pues el programa anterior ya murio y ahora seria uno nuevo.</dd>
             </dl>
 
-            <dl style="border: 3px;border-style:solid;border-color: black;background-color: aliceblue;" > 
+            <dl class="respuestas" > 
                 Fases de desarrollo de sistemas de informacion: <br>
             <dt>Planeacion</dt>
                 <dd>Requerimiento completo teniendo en cuenta el flujo de informacion con que se trabaja, documentar mediante diagramas de flujo, usarios,necesidades </dd>    
@@ -165,10 +162,32 @@
                 </dd>   
             <dt>Pruebas</dt>
                 <dd>Resultados del sistema. Precision, Calidad y los productos esperados. Es un proceso ciclico </dd>
+            </dl>
         </p>
+        <h3 style="font-size: larger;">Preguntas Laboratorio 03:</h3>
+        <h3> Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </h3>
+        <p class="respuestas">
+            Sirve para indicar las instrucciones prioritarias para que no sean sobreescritas por alguna otra.
+        </p>
+        <h3>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</h3>
+        <p class="respuestas">
+            Por que no todas las imagenes cuentan con una calidad muy buena, no son escalables, puede distraer de la pagina 
+        </p>
+        <h3>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</h3>
+        <p class="respuestas">
+            Es mejor usar porcentajes para que se ajuste a todas los dispositivos o tamaños de ventana, pues termina siendo algo subjetivo y no un valor fijo.
+        </p>
+        <h3>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h3>
+        <p class="respuestas">
+            Primero que nada es mucho mas conveniente que los estilos esten en un archivo aparte en el CSS, preferiblemente usar el menor numero de hojas CSS, una es mas que suficiente. <br>
+            Las  hojas de estilo deben descargarse rápidamente para que nuestro navegador aplique los estilos lo antes posible y por ello se recomienda que no ocupen más de 100 kb por fichero CSS.
+
+        </p>
+        
+
         </div>
         <div>
-        <h2>Editor de HTML utilizado: <strong>Visual Studio Code</strong></h2>
+        <h3>Editor de HTML utilizado: <strong>Visual Studio Code</strong></h3>
         <footer>
             From: Microsoft<br>
             <a href="https://code.visualstudio.com/">Visual Studio Code</a><br>
