@@ -108,3 +108,18 @@ function inverso(num){
 const invertir=prompt("Numero para conseguir el inverso");
 document.write('El inverso de '+invertir+' es ');
 inverso(invertir);
+
+function hoja_personajes(nuevo_nombre,nuevo_nivel,nueva_Clase){
+    this.nombre=nuevo_nombre;
+    this.nivel=nuevo_nivel;
+    this.clase=nueva_Clase;
+    this.moneda=10000;
+    this.imprimir=imprimir_personaje
+}
+
+function imprimir_personaje(){
+    document.write("<br>",this.nombre," ",this.nivel," ",this.clase," <br>");
+}
+
+mi_personaje=new hoja_personajes("Alfredo Godofredo",45,"Monje");
+mi_personaje.imprimir();
