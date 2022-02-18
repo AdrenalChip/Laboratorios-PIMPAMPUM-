@@ -70,7 +70,41 @@ function contador(arreglo){
             negativos=0+1;
         }
     }
-    document.write('La cantidad de ceros: '+ ceros+'<br> La cantidad de negativos:'+negativos+'<br> La cantidad de numeros mayores a ceros: '+mayores_cero);
+    document.write('<br>La cantidad de ceros: '+ ceros+'<br> La cantidad de negativos:'+negativos+'<br> La cantidad de numeros mayores a ceros: '+mayores_cero);
 }
 
+function promedio(arreglos){
+    let prom=[0,0,0];
+    let proms=0;
+    for (let i=0;i<=2;i++){
+        for (let j=0;j<=3;j++){
+            proms=proms+arreglos[i][j];
+        }
+        proms=proms/4;
+        prom[i]=proms;
+        proms=0;
+    }
+    document.write('<br> El promedio de esto es '+prom+'<br>');
+}
 contador(arreglo);
+
+const arreglos=[
+    [1,3,5,6],[4,5,8,9],[9,19,4,5]
+];
+promedio(arreglos);
+
+function inverso(num){
+    document.write (
+        parseFloat(
+          num
+            .toString()
+            .split('')
+            .reverse()
+            .join('')
+        ) * Math.sign(num)
+      )                 
+}
+
+const invertir=prompt("Numero para conseguir el inverso");
+document.write('El inverso de '+invertir+' es ');
+inverso(invertir);
