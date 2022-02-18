@@ -114,12 +114,17 @@ function hoja_personajes(nuevo_nombre,nuevo_nivel,nueva_Clase){
     this.nivel=nuevo_nivel;
     this.clase=nueva_Clase;
     this.moneda=10000;
-    this.imprimir=imprimir_personaje
+    this.imprimir=imprimir_personaje;
+    this.dinero=dinero_personaje;
 }
 
 function imprimir_personaje(){
     document.write("<br>",this.nombre," ",this.nivel," ",this.clase," <br>");
 }
-
+function dinero_personaje(){
+    moneda=moneda-10;
+    document.write("<br> Acaba de gastar dinero, su nuevo saldo es",this.moneda);
+}
 mi_personaje=new hoja_personajes("Alfredo Godofredo",45,"Monje");
 mi_personaje.imprimir();
+mi_personaje.dinero();
