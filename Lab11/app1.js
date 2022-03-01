@@ -1,5 +1,11 @@
 const express= require('express');
 const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
+
+
+const rutas_movies = require('./routes/movies.routes');
+app.use('/movies', rutas_movies);
 
 //Middleware
 app.use((request,response,next)=>{
@@ -7,8 +13,8 @@ app.use((request,response,next)=>{
     next(); //avanzar al siguiente middleware
 });
 
-app.use('/capybaras',(request,response,next)=>{
-    console.log('Ruta/capybaras');
+app.use((request,response,next)=>{
+    console.log('Otro middleware');
     response.send('Hola mundo')
 });
 
