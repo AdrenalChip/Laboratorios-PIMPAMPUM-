@@ -1,0 +1,29 @@
+{
+  "name": "laboratorios-pimpampum-",
+  "version": "1.0.0",
+  "description": "Lab 11",
+  "main": "app1.js",
+  "scripts": {
+    "start": "nodemon Lab11/app1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrenalChip/Laboratorios-PIMPAMPUM-.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Jorge Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrenalChip/Laboratorios-PIMPAMPUM-/issues"
+  },
+  "homepage": "https://github.com/AdrenalChip/Laboratorios-PIMPAMPUM-#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
