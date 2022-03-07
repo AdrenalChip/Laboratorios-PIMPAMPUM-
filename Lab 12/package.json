@@ -2,9 +2,9 @@
   "name": "lab-12",
   "version": "1.0.0",
   "description": "Lab12",
-  "main": "app1.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app1.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jorge Guerrero",

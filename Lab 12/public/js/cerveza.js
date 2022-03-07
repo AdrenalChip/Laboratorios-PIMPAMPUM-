@@ -83,3 +83,4 @@ console.log(cervezas);
 for (let i in cervezas) {
     console.log(i);
 }
+
