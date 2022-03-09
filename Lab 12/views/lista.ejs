@@ -24,6 +24,7 @@
         <h1>Ahorita no hay capybaras, regresa pronto.</h1>
     <% } %>  
     </div>
+
     <br><br>
     <p>Tenemos las siguientes series </p>
     <!--SERIES-->
@@ -76,9 +77,12 @@
             <h1>Ahorita no hay capybaras, regresa pronto.</h1>
         <% } %>  
     </div>
-
+<!--A ver q pasa-->
+    <% if (ultimo_capybara !=''){ %>
+        <p>El ultimo capybara agregado fue: <%=ultimo_capybara %></p>
+    <%}%>
     <br><br>
-    <a href="/capybaras/nuevo">Agregar un nuevo pelicula</a>
+    <a href="/capybaras/nuevo"><i class="material-icons">add</i>Agregar un nuevo pelicula</a>
     <!--AGREGAR SERIES -->
     <a href="/capybaras/nuevo2">Agregar una nueva serie</a>
     <!--AGREGAR ANIME-->

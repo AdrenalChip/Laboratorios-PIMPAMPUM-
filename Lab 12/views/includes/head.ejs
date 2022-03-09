@@ -19,12 +19,16 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Laboratorio 12</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/capybaras/nuevo">Nueva Pelicula</a></li>
-            <li><a href="/capybaras/nuevo2">Nueva Serie</a></li>
-            <li><a href="/capybaras/nuevo3">Nuevo anime</a></li>
+            <% if (username !='') { %>
+              <li><%= username %></li>
+              <li><a href="/users/logout">Salir</a></li>
+            <% } %>
           </ul>
-
         </div>
       </nav>
 
     <div class="container">
+
+    <!--    <li><a href="/capybaras/nuevo">Nueva Pelicula</a></li>
+            <li><a href="/capybaras/nuevo2">Nueva Serie</a></li>
+            <li><a href="/capybaras/nuevo3">Nuevo anime</a></li>-->
