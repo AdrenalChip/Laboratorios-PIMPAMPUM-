@@ -16,6 +16,7 @@ router.get('/nuevo3',capybarasController.get_nuevo3);
 router.post('/nuevo3', capybarasController.post_nuevo3);
 
 ///HIHI
+//router.get('/:capybaras_id',capybarasController.filtrar);
 router.use('/',capybarasController.listar);
 
 module.exports = router;
