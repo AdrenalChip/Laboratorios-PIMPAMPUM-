@@ -1,0 +1,8 @@
+SELECT Descripcion, SUM(Cantidad)
+FROM Materiales M, Entregan E
+WHERE M.Clave=E.Clave
+
+Website: We use cookies to improve performance
+Me:      Same
+
+Git commit 12:10 passwords encriptados
