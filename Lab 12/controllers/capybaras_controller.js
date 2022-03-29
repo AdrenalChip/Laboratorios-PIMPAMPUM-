@@ -17,8 +17,9 @@ exports.get_nuevo = (request, response, next) => {
 exports.post_nuevo = (request, response, next) => {
     console.log('POST /capybaras/nuevo');
     console.log(request.body);
+    console.log(request.file);
     const capybara = 
-    new Capybara(request.body.nombre,request.body.descripcion,request.body.imagen);
+    new Capybara(request.body.nombre,request.body.descripcion,request.file.filename);
     capybara.save()
         .then(()=>{
             request.session.info=capybara.nombre+'fue registrado con éxito';

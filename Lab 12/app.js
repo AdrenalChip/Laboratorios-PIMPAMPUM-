@@ -7,6 +7,7 @@ const rutas_users=require('./routes/user.routes');
 const path = require('path');
 const csrf=require('csurf');
 const csrfProtection=csrf();
+const multer=require('multer');
 
 const app = express();
 
@@ -16,6 +17,18 @@ app.set('views', 'views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({extended: false}));
+
+const fileStorage=multer.diskStorage({
+    destination: (request,file,callback)=>{
+        callback(null,'uploads');
+    },
+    filename: (request,file,callback)=>{
+        callback(null,new Date().getTime()+'-'+file.originalname);
+    },
+});
+
+app.use(multer({storage:fileStorage}).single('imagen'));
+
 app.use(cookieParser());
 app.use(session({
     secret: 'tesdrcfvgybhunjimkoiouhygturdyesrydctvybunjiouyt68d43a577yb7vc6543s475r6tvy', 
