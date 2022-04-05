@@ -1,0 +1,22 @@
+Dentro del proyecto se realizo el script_modificar.js para que se fueran cambiando las preguntas desplegadas en la view del usuario en funcion de los tipos 
+de incidencia que se ibanseleccionado
+
+https://github.com/juanManuelGonzalezA00572003/Div-Dev/commit/bd198247d98a9c64671c85814cf06d887d05c7c0
+
+¿Qué importancia tiene AJAX en el desarrollo de RIA's (Rich Internet Applications)?
+
+RIA es una aplicación web que tiene la mayoría de las características de las aplicaciones de escritorio tradicionales. 
+Estas aplicaciones utilizan un navegador web estandarizado para ejecutarse y por medio de complementos o mediante una máquina virtual 
+se agregan las características adicionales.  
+
+AJAX permite la reactividad en tiempo real a las decisiones que tome el usuario por lo que ayuda a proveer 
+una mayor simpleza, mayor velocidad y eficacia, termina presentando una pagina web dinamica 
+
+
+¿Qué implicaciones de seguridad tiene AJAX? ¿Dónde se deben hacer las validaciones de seguridad, del lado del cliente o del lado del servidor?
+Se validad de manera independiente en ambos, independientemente de la validacion del cliente se requiere la validacion del servidor. 
+
+
+¿Qué es JSON?
+JavaScript Object Notation
+JSON es un formato que almacena información estructurada y se utiliza principalmente para transferir datos entre un servidor y un cliente.
