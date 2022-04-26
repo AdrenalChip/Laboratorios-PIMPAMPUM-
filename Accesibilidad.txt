@@ -1,0 +1,14 @@
+
+    ¿Por qué es importante la accesibilidad?
+    -Permite que una mayor cantidad de usuarios disfruten de la aplicacion
+    -Mas amigable para los demas, la personalizacion del sistema genera un ambiente personalizado al usuario 
+    
+    
+    ¿Cuáles son los lineamientos de accesibilidad que consideras más importantes? ¿Por qué?
+    -El contraste en los colores del sistema,todas las personas ven diferente manera y todos deben de ser capaz de distinguir los diferentes elementos 
+    
+    
+    Describe 3 cambios que harás en tu proyecto para hacerlo más accesible.
+    -Cambio de colores o agregar texturas en las metricas
+    -Ajustar los colores de los estados y columnas
+    -Bold, en negritas algunos textos
